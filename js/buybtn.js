@@ -17,7 +17,7 @@ function interval() {
     if (minute == 60) {
         minute = 0; hour += 1;
     }
-    if (minute30 == 30) {
+    if (minute30 == 5) {
         minute30 = 0;
         if(branumber_black>9){
             branumber_black-=1;
@@ -43,4 +43,3 @@ function interval() {
     document.querySelector('.number_blue').innerText = branumber_blue;
     window.setTimeout("interval();", 1000);
 }
-
